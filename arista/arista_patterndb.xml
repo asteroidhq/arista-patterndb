@@ -19,6 +19,26 @@
           <value name="logevent">ifstate</value>
         </values>
       </rule>
+
+      <rule id='3' class='system' provider='patternize'>
+        <patterns>
+          <pattern>%PORTSECURITY-2-PSECURE_VIOLATION: Security violation occurred, caused by MAC address @MACADDR:macaddress@ on vlan @NUMBER:vlannumber:@ interface @STRING:interface_name:/-@.</pattern>
+        </patterns>
+        <examples>
+            <example>
+                <test_message program='%LINEPROTO-5-UPDOWN'>%PORTSECURITY-2-PSECURE_VIOLATION: Security violation occurred, caused by MAC address ac:1f:2b:1c:db:c6 on vlan 101 interface Ethernet1/2.</test_message>
+                <test_values>
+                  <test_value name="interface_name">Ethernet1/2</test_value>
+                  <test_value name="vlannumber">101</test_value>
+                  <test_value name="macaddress">ac:1f:2b:1c:db:c6</test_value>
+                </test_values>
+            </example>
+        </examples>
+        <values>
+          <value name="logevent">portsecurity-macaddress</value>
+        </values>
+      </rule>
+
     </rules>
   </ruleset>
 </patterndb>
