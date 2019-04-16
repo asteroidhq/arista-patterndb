@@ -18,12 +18,7 @@ Apr 15 09:55:19 sw1-los Fru: %FRU-6-TRANSCEIVER_INSERTED: A transceiver for inte
 Apr 15 09:55:30 sw1-los Fru: %FRU-6-TRANSCEIVER_INSERTED: A transceiver for interface Ethernet3 has been inserted. manufacturer: FLEXOPTIX model: P.1396.10 part number P.1396.10 rev A serial number L28RN9R
 Apr 15 09:56:07 sw1-los Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet11, changed state to up
 Apr 15 09:56:07 sw1-los Stp: %SPANTREE-4-INTERFACE_SELF_LOOPED: Interface Ethernet11 received its own bpdu: blocking interface (bridge mac 28:99:3a:8f:3c:ff port id 11)
-Apr 15 09:56:07 sw1-los Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet11 has been added to instance MST0
-Apr 15 09:56:07 sw1-los Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
-Apr 15 09:56:09 sw1-los Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 2899.3a8f.3cff and portId "Ethernet11" added on interface Ethernet11
 Apr 15 09:56:11 sw1-los Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet11, changed state to down
-Apr 15 09:56:11 sw1-los Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet11 has been removed from instance MST0
-Apr 15 09:56:41 sw1-los Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
 Apr 15 10:38:52 sw1-los Cli: %SYS-5-CONFIG_E: Enter configuration mode from console by admin on vty6 (172.20.0.10)
 Apr 15 10:38:58 sw1-los Cli: %SYS-5-CONFIG_I: Configured from console by admin on vty6 (172.20.0.10)
 Apr 15 10:52:30 sw1-los Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet3 (Description XYZ), changed state to up
@@ -32,10 +27,6 @@ Apr 15 10:52:31 sw1-los Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Et
 Apr 15 10:52:35 sw1-los Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Port-Channel20 (Description XYZ), changed state to up
 Apr 15 10:52:35 sw1-los Lag: %LAG-5-MEMBER_ADDED: Interface Ethernet3 (Description XYZ) has joined Port-Channel20 (Description XYZ)
 Apr 15 10:52:35 sw1-los Stp: %SPANTREE-6-INTERFACE_ADD: Interface Port-Channel20 has been added to instance MST0
-Apr 15 10:52:35 sw1-los Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
-Apr 15 10:52:55 sw1-los Stp: %SPANTREE-6-INTERFACE_STATE: Interface Port-Channel20 instance MST0 moving from discarding to learning
-Apr 15 10:52:55 sw1-los Stp: %SPANTREE-6-INTERFACE_STATE: Interface Port-Channel20 instance MST0 moving from learning to forwarding
-Apr 15 10:53:25 sw1-los Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
 Apr 18 13:34:30 mca-sw1 Ebra: %ETH-4-ERRDISABLE: xcvr-unsupported error detected on Ethernet2/1.
 Apr 18 13:34:30 mca-sw1 Ebra: %ETH-4-ERRDISABLE: xcvr-unsupported error detected on Ethernet2/2.
 Apr 18 13:34:30 mca-sw1 Ebra: %ETH-4-ERRDISABLE: xcvr-unsupported error detected on Ethernet2/3.

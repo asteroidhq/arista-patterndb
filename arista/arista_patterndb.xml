@@ -92,7 +92,7 @@
           <value name="logevent">transceiverstate</value>
           <value name="transceiver_state">inserted</value>
         </values>
-      </rule>     
+      </rule>    
 
     </rules>
   </ruleset>
