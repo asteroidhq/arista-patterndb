@@ -100,7 +100,7 @@
         </patterns>
         <examples>
             <example>
-                <test_message program='Fru'>%SPANTREE-4-INTERFACE_SELF_LOOPED: Interface Ethernet11 received its own bpdu: blocking interface (bridge mac 28:99:3a:8f:3c:ff port id 11)</test_message>
+                <test_message program='Stp'>%SPANTREE-4-INTERFACE_SELF_LOOPED: Interface Ethernet11 received its own bpdu: blocking interface (bridge mac 28:99:3a:8f:3c:ff port id 11)</test_message>
                 <test_values>
                   <test_value name="interface_name">Ethernet11</test_value>
                   <test_value name="switch_macaddress">28:99:3a:8f:3c:ff</test_value>
