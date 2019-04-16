@@ -1,0 +1,22 @@
+<patterndb version='4' pub_date='2019-04-16'>
+  <ruleset name='asteroid_arista' id='1'>
+    <rules>
+      <rule id='2' class='system' provider='patternize'>
+        <patterns>
+          <pattern>%LINEPROTO-5-UPDOWN: Line protocol on Interface @STRING:interface_name:/-@ (@STRING:interface_description::= @), changed state to @STRING:interface_state:@</pattern>
+        </patterns>
+        <examples>
+            <example>
+                <test_message program='%LINEPROTO-5-UPDOWN'>%LINEPROTO-5-UPDOWN: Line protocol on Interface Port-Channel27 (Customer name), changed state to down</test_message>
+                <test_values>
+                  <test_value name="interface_name">Port-Channel27</test_value>
+                  <test_value name="interface_description">Customer name</test_value>
+                  <test_value name="interface_state">down</test_value>
+                </test_values>
+            </example>
+        </examples>
+      </rule>
+    </rules>
+  </ruleset>
+</patterndb>
+
