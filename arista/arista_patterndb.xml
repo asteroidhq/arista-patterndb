@@ -15,6 +15,9 @@
                 </test_values>
             </example>
         </examples>
+        <values>
+          <value name="logevent">ifstate</value>
+        </values>
       </rule>
     </rules>
   </ruleset>
