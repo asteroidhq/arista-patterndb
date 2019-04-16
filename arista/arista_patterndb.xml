@@ -111,7 +111,27 @@
         <values>
           <value name="logevent">switchloop</value>
         </values>
-      </rule>    
+      </rule> 
+
+      <rule id='8' class='system' provider='patternize'>
+        <patterns>
+          <pattern>%LAG-5-MEMBER_ADDED: Interface @STRING:interface_name:/-@ (@STRING:interface_description::= @) has joined @STRING:lag_interface_name:/-@ (@STRING:lag_interface_description::= @)</pattern>
+        </patterns>
+        <examples>
+            <example>
+                <test_message program='Lag'>%LAG-5-MEMBER_ADDED: Interface Ethernet3 (Description XYZ) has joined Port-Channel20 (Description XYZ)</test_message>
+                <test_values>
+                  <test_value name="interface_name">Ethernet3</test_value>
+                  <test_value name="interface_description">Description XYZ</test_value>
+                  <test_value name="lag_interface_name">Port-Channel20</test_value>
+                  <test_value name="lag_interface_description">Description XYZ</test_value>
+                </test_values>
+            </example>
+        </examples>
+        <values>
+          <value name="logevent">lagstate</value>
+        </values>
+      </rule>
 
 
 
